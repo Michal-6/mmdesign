@@ -358,7 +358,7 @@ h1 {
     background-position: center;
     position: relative;
     transition: flex 0.5s ease, transform 0.5s ease;
-    backdrop-filter: brightness(50%);
+    filter: brightness(50%) !important;
     filter: grayscale(100%);
     cursor: pointer;
 
@@ -368,13 +368,15 @@ h1 {
         bottom: 10px;
         left: 20px;
         right: 10px;
-        color: black;
+        color: $white100;
         padding: 5px;
         text-align: center;
         opacity: 0;
         transition: opacity 0.5s ease;
         font-size: 1.5rem;
-        font-weight: 800;
+        font-weight: 400;
+        filter: brightness(100%) !important;
+        //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     &:hover {
